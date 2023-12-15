@@ -2,21 +2,21 @@
 
 ## Project name
 
-[News Analysis]
+News Analysis
 
 ## Selected problem
 
-[Анализатор влияния новостей крипторынка: Корреляция новостных настроений с движением цен на токены]
+Анализатор влияния новостей крипторынка: Корреляция новостных настроений с движением цен на токены.
 
 ## Team name
 
-[Route66]
+Route66
 
 ## Participants
 
-* Full name: [Мырзаханов Абылайхан Уланулы]. Email: [212257@astanait.edu.kz]
-* Full name: [Туран Мирас Серикханулы]. Email: [212336@astanait.edu.kz]
-* Full name: [Тулешев Туран Бержанович]. Email: [212470@astanait.edu.kz]
+* Full name: Мырзаханов Абылайхан Уланулы. Email: 212257@astanait.edu.kz
+* Full name: Туран Мирас Серикханулы. Email: 212336@astanait.edu.kz
+* Full name: Тулешев Туран Бержанович. Email: 212470@astanait.edu.kz
 
 ## Abstract
 
