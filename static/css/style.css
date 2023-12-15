@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0D1633;
+    color: #fff;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.oracle-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.oracle-logo img {
+    margin-right: 10px;
+}
+
+.oracle-logo h1 {
+    color: #fff;
+}
+
+.table-container {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.table {
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(45deg, #17223B, #0D1633);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table th,
+.table td {
+    border: none;
+    padding: 15px;
+    text-align: center;
+}
+
+.table thead th {
+    background-color: #0D1633;
+    color: #4CAF50;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #2C3E50;
+    border-radius: 20px;
+}
+
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #45A049;
+}
+
+@media (max-width: 600px) {
+    .table {
+        font-size: 14px;
+    }
+}
+
+.crypto-info {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.crypto-info img {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #001f3f;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-footer, .right-footer {
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.left-footer {
+    margin-right: auto;
+}
+
+.right-footer {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.r66 {
+    display: flex;
+    align-items: center;
+}
+
+.r66 img{
+    padding-left: 10px;
+}
