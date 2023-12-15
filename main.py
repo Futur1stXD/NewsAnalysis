@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 import requests
 
 app = Flask(__name__)
@@ -11,8 +11,7 @@ COIN_MARKET_API_KEY = "cde45351-3b00-49ff-8b0a-bc62c8e88295"
 @app.route('/')
 def main():
     current_currencies = getCryptoData()
-    print(current_currencies[1])
-    return 'Hello World!'
+    return render_template('main.html', currencies = current_currencies)
 
 
 # ************* Useful functions *************
@@ -37,8 +36,31 @@ def getCryptoData():
         }
         crypto_array.append(currency_info)
     return crypto_array
+
+
+def formatLargeNumber(value):
+    if value is None:
+        return "N/A"
+
+    # Convert to a float to ensure that it's a numerical value
+    value = float(value)
+
+    # Determine the magnitude of the number
+    magnitude = ""
+    if abs(value) >= 1.0e9:
+        value /= 1.0e9
+        magnitude = "B"
+    elif abs(value) >= 1.0e6:
+        value /= 1.0e6
+        magnitude = "M"
+
+    # Format the number with 2 decimal places
+    return "{:.2f}{}".format(value, magnitude)
 # ********************************************
 
 
+app.jinja_env.filters['formatLargeNumber'] = formatLargeNumber
+
+
 if __name__ == '__main__':
-    app.run(debug=True, port=3000)
+    app.run(debug=True)
