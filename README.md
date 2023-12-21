@@ -27,7 +27,9 @@ We have created an NLP model that qualitatively analyzes the text in Russian and
 
 For interactive purposes, we have created a website to demonstrate our implementation.
 
+## Demo video
 
+[Link to a demo video showcasing your project, if any. Ensure it is less than 3 minutes long.]
 
 ## How to run
 
