@@ -88,6 +88,11 @@ We also wrote a function that compares the news mood with the market price after
 <img width="922" alt="Снимок экрана 2023-12-20 в 22 44 15" src="https://github.com/Futur1stXD/NewsAnalysis/assets/126179639/04b5b319-1bdf-4249-b9e9-59691d85d946">
 
 For interactive purposes, we have created a website that shows our analysis of the news.
+There is the main page where some crytocurrency tokens is shown with their real-time information.
+![image](https://github.com/Futur1stXD/NewsAnalysis/assets/90721576/1dfef50a-e2bc-400a-8a0e-e10ad0de5979)
+Then we can move to the details page where the graph of price over time is shown. Also you can see points on graph, this is news that has been published at that time. Under the graph there is information about news. It contains their links, published time and our prediction that we got from analysis.
+![image](https://github.com/Futur1stXD/NewsAnalysis/assets/90721576/efd94d84-15bc-4184-a790-9d3e52ec074b)
+![image](https://github.com/Futur1stXD/NewsAnalysis/assets/90721576/ecac1236-5b21-4acd-94b1-c63b1c5dc733)
 
 ## Challenges faced
 
