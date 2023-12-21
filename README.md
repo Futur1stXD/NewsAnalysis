@@ -26,6 +26,11 @@ We have created an NLP model that qualitatively analyzes the text in Russian and
 <img width="939" alt="Снимок экрана 2023-12-20 в 22 54 23" src="https://github.com/Futur1stXD/NewsAnalysis/assets/126179639/4cdb2c2f-8394-4a44-8b9d-59757c17f480">
 
 For interactive purposes, we have created a website to demonstrate our implementation.
+![2023-12-21 10 58 46](https://github.com/Futur1stXD/NewsAnalysis/assets/126179639/93312d93-1ab3-42c1-bbed-09a3916ca08a)
+<img width="1512" alt="Снимок экрана 2023-12-21 в 10 59 11" src="https://github.com/Futur1stXD/NewsAnalysis/assets/126179639/8cc6b1d9-bd73-4155-8d72-391d7ab52941">
+<img width="1512" alt="Снимок экрана 2023-12-21 в 10 59 22" src="https://github.com/Futur1stXD/NewsAnalysis/assets/126179639/059c3912-86fa-4813-bcc3-eefbb52274cb">
+<img width="1512" alt="Снимок экрана 2023-12-21 в 10 59 34" src="https://github.com/Futur1stXD/NewsAnalysis/assets/126179639/2471ccd1-24c4-4ed6-9708-4f014c4cabc5">
+
 
 ## Demo video
 
