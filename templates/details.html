@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Graph</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Byker:wght@700&display=swap">
+    <style>
+        body {
+            text-align: center;
+            background-color: #0d1633;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: 'Byker', sans-serif; 
+            margin-top: 50px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Price Graph</h1>
+    {{ graph_html|safe }}
+    <div>
+        <h2>Lates 10 min News Information:</h2>
+        {% if news_data %}
+            <ul>
+                {% for news_item in news_data %}
+                    <li>
+                        <strong>URL:</strong> <a href="{{ news_item.url }}" target="_blank">{{ news_item.url }}</a> <br>
+                        <strong>Time:</strong> {{ news_item.time }} <br>
+                        <strong>Sentiment:</strong> {{ news_item.sentiment }} <br>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No news to analyze.</p>
+        {% endif %}
+        <h2>Latest News Information:</h2>
+        {% if latest_data %}
+            <ul>
+                {% for news_item in latest_data %}
+                    <li>
+                        <strong>Headline:</strong> {{ news_item.headline }} <br>
+                        <strong>Difference in Price:</strong> {{ news_item.diff_price }} <br>
+                        <strong>Predicted Sentiment:</strong> {{ news_item.predicted_sentiment }} <br>
+                        <strong>Relationship:</strong> {{ news_item.relationship }} <br>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No news to analyze.</p>
+        {% endif %}
+
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="left-footer">2023</div>
+            <div class="right-footer r66">
+                © Created by Route66 Team
+                <img src="/static/images/Route66.png" alt="Route66" width="50">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

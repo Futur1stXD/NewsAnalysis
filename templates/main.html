@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>News Analysis</title>
+</head>
+<body>
+    <div class="container">
+        <div class="oracle-logo">
+            <img src="/static/images/Oraclus.png" alt="Oracle Logo" width="200">
+            <h1>News Analysis</h1>
+        </div>
+
+        <div id="crypto-list">
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Volume (last 24h)</th>
+                        <th scope="col">Capitalization</th>
+                        <th scope="col">Details</th>
+                    </tr>
+                </thead>
+                {% for currency in currencies %}
+                <tbody id="crypto-list-tbody">
+                    {% for currency in currencies %}
+                    <tr>
+                        <td>
+                            <div class="crypto-info">
+                                <img src="/static/images/{{ currency.symbol }}.png" alt="Bitcoin" width="30">
+                                <span>{{ currency.symbol }}</span>
+                            </div>
+                        </td>
+                        <td>${{ currency.price | formatLargeNumber }}</td>
+                        <td>${{ currency.volume_24h | formatLargeNumber }}</td>
+                        <td>${{ currency.market_cap | formatLargeNumber }}</td>
+                        <td>
+                            <a href="{{ url_for('details', id=currency.symbol) }}" class="btn btn-primary btn-sm">Details</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                {% endfor %}
+            </table>
+        </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="left-footer">2023</div>
+            <div class="right-footer r66">
+                © Created by Route66 Team
+                <img src="/static/images/Route66.png" alt="Route66" width="50">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
