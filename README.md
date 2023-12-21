@@ -51,7 +51,7 @@ pip3 install flask
 
 [Provide specific commands and environment for building and running your project, preferably in a containerized environment.]
 
-You need install only python packages, which were specified earlier.
+To run the application, ensure that you have the required dependencies installed. You can then execute the script, and the Flask application will start running locally on port 5000 (default).
 
 ## Inspirations
 
@@ -63,7 +63,18 @@ We took this idea because of the 6 ideas from Oraclus, this one was the most int
 
 [List the technologies, frameworks and development processes used in your project.]
 
-Pandas, numpy, tenserflow, newspaper3k, scikit-learn, yfinance, flask
+Technologies and Frameworks:
+
+Flask
+requests
+yfinance
+Plotly
+numpy
+pandas
+scikit-learn
+Keras
+NLTK (Natural Language Toolkit)
+Jinja2
 
 ## Solutions and features implemented
 
