@@ -57,7 +57,7 @@ To run the application, ensure that you have the required dependencies installed
 
 [Explain the inspirations behind your project. What motivated your team to work on this idea?]
 
-We took this idea because of the 6 ideas from Oraclus, this one was the most interesting. In addition, we wanted to learn how to make and train our NLP-related models, because we had never worked with NLP before.
+We took this idea because of the 6 ideas from Oraclus, this one was the most interesting. In addition, we wanted to learn how to make and train our NLP-related models, because we had never worked with NLP and ML before.
 
 ## Technology stack and organization
 
@@ -110,7 +110,7 @@ We learned how to train the NLP model and figured out how it works.
 
 [Outline potential future improvements or features your team would like to implement.]
 We have already demonstrated to you that we can train our model in different languages, so we would like to add the main languages for news analysis (Chinese, Korean, etc.).
-We could also train the model so that it can deduce the subjectivity of the news. And we could roughly train a model to predict exactly how much the price will fall due to the news.
+We could also train the model so that it can deduce the subjectivity of the news. And we could roughly train a model to predict exactly how much the price will fall due to the news. Also creating this project motivated us to learn more about ML and create more creative projects.
 
 ## Additional sources
 
